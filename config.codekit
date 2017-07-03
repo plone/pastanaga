@@ -58,7 +58,7 @@
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/src\/examples\/components\/form-components.jade",
 		"outputAbbreviatedPath": "\/src\/examples\/components\/form-components.html",
 		"outputPathIsOutsideProject": 0,

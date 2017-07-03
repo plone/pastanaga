@@ -1,14 +1,21 @@
 
 <!-- single checkbox example-->
 <fieldset class="form-field">
-  <input id="form-checkbox-id01" type="checkbox" name="form-checkbox-id01" class="form-checkbox"/>
-  <label for="form-checkbox-id01" aria-describedby="form-checkbox-id01-help" class="form-label">Checkbox label</label>
+  <input id="form-checkbox-id01" type="checkbox" name="form-checkbox-id01" required="required" class="form-checkbox"/>
+  <label for="form-checkbox-id01" aria-describedby="form-checkbox-id01-help" class="form-label">Checkbox label<span class="form-required">(required)</span></label>
   <p id="form-checkbox-id01-help" class="form-help">Complementary and clarification to the label</p>
 </fieldset>
-<!-- single checkbox example-->
+<!-- single toggle example-->
 <fieldset class="form-field">
   <input id="form-toggle-id01" type="checkbox" name="form-toggle-id01" class="form-toggle"/>
   <label for="form-toggle-id01" aria-describedby="form-toggle-id01-help" class="form-label">Toggle label</label>
+  <p id="form-toggle-id01-help" class="form-help">Complementary and clarification to the label</p>
+</fieldset>
+<!-- single range example-->
+<fieldset class="form-field">
+  <label for="form-range-id01" aria-describedby="form-range-id01-help" class="form-label">Toggle label</label>
+  <input id="form-range-id01" type="range" name="form-range-id01" min="0" max="100" step="1" value="88" oninput="form-range-id01-output.value = form-range-id01.value" class="form-range"/>
+  <output id="form-range-id01-output" for="form-range-id01" name="form-range-id01-output" class="form-output">88</output>
   <p id="form-toggle-id01-help" class="form-help">Complementary and clarification to the label</p>
 </fieldset>
 <!-- several checkboxes example-->
@@ -37,38 +44,38 @@
 </fieldset>
 <!-- textarea-->
 <fieldset class="form-field">
-  <label for="form-textarea-id01" aria-describedby="form-textarea-id01-help" class="form-label">Textarea label </label>
-  <textarea id="form-textarea-id01" name="form-textarea-id01" placeholder="Placeholder" class="form-textarea"></textarea>
+  <label for="form-textarea-id01" aria-describedby="form-textarea-id01-help" class="form-label">Textarea label<span class="form-required">(required)</span></label>
+  <textarea id="form-textarea-id01" name="form-textarea-id01" required="required" placeholder="Placeholder" class="form-textarea"></textarea>
   <p id="form-textarea-id01-help" class="form-help">Complementary and clarification to the label</p>
 </fieldset>
 <!-- password input-->
 <fieldset class="form-field">
-  <label for="form-password-id01" aria-describedby="form-password-id01-help" class="form-label">PSW label</label>
-  <input id="form-text-id01" type="password" name="form-password-id01" placeholder="Placeholder" class="form-password"/>
+  <label for="form-password-id01" aria-describedby="form-password-id01-help" class="form-label">PSW label<span class="form-required">(required)</span></label>
+  <input id="form-text-id01" type="password" name="form-password-id01" required="required" placeholder="Placeholder" class="form-password"/>
   <p id="form-text-id01-help" class="form-help">Complementary and clarification to the label</p>
 </fieldset>
 <!-- email input-->
 <fieldset class="form-field">
-  <label for="form-email-id01" aria-describedby="form-email-id01-help" class="form-label">Email label</label>
-  <input id="form-text-id01" type="email" name="form-email-id01" placeholder="Placeholder" class="form-email"/>
+  <label for="form-email-id01" aria-describedby="form-email-id01-help" class="form-label">Email label<span class="form-required">(required)</span></label>
+  <input id="form-text-id01" type="email" name="form-email-id01" required="required" placeholder="Placeholder" class="form-email"/>
   <p id="form-email-id01-help" class="form-help">Complementary and clarification to the label</p>
 </fieldset>
 <!-- password input-->
 <fieldset class="form-field">
-  <label for="form-number-id01" aria-describedby="form-number-id01-help" class="form-label">Number label</label>
-  <input id="form-text-id01" type="number" name="form-number-id01" placeholder="Placeholder" class="form-number"/>
+  <label for="form-number-id01" aria-describedby="form-number-id01-help" class="form-label">Number label<span class="form-required">(required)</span></label>
+  <input id="form-text-id01" type="number" name="form-number-id01" required="required" placeholder="Placeholder" class="form-number"/>
   <p id="form-number-id01-help" class="form-help">Complementary and clarification to the label</p>
 </fieldset>
 <!-- file input-->
 <fieldset class="form-field">
-  <label for="form-file-id01" aria-describedby="form-file-id01-help" class="form-select">Browse label</label>
-  <input id="form-text-id01" type="file" name="form-file-id01" class="form-file"/>
+  <label for="form-file-id01" aria-describedby="form-file-id01-help" class="form-select">Browse label<span class="form-required">(required)</span></label>
+  <input id="form-text-id01" type="file" name="form-file-id01" required="required" class="form-file"/>
   <p id="form-file-id01-help" class="form-help">Complementary and clarification to the label</p>
 </fieldset>
 <!-- select input-->
 <fieldset class="form-field">
-  <label for="form-select-id01" aria-describedby="form-select-id01-help" class="form-label">Select label</label>
-  <select id="form-text-id01" class="form-select">
+  <label for="form-select-id01" aria-describedby="form-select-id01-help" class="form-label">Select label<span class="form-required">(required)</span></label>
+  <select id="form-text-id01" required="required" class="form-select">
     <optgroup label="2 elements">
       <option value="1">First</option>
       <option value="2">Second</option>
