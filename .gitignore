@@ -9,6 +9,17 @@
 # production
 /build
 
+.Python
+bin/
+include/
+lib/
+log.html
+output.xml
+pip-selfcheck.json
+report.html
+selenium-screenshot-*.png
+selenium
+
 # misc
 .DS_Store
 .env.local
