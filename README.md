@@ -11,7 +11,6 @@ We will also use the yarn package manager (https://yarnpkg.com/en/) which provid
 
   $ npm install yarn -g
 
-
 ## Setup
 
   $ yarn
@@ -20,6 +19,19 @@ We will also use the yarn package manager (https://yarnpkg.com/en/) which provid
 ## Start
 
   $ yarn start
+
+
+## Setup Backend
+
+Pull plone.restapi docker image from docker hub:
+
+  $ docker pull plone/plone.restapi
+
+Start plone.restapi docker image:
+
+  $ docker run -p 8080:8080 plone/plone.restapi
+
+The '-p' argument allows you to expose the Zope process that runs on port 8080 within the docker container to an local 'external:docker'
 
 ## Development
 
@@ -59,3 +71,8 @@ By default we run our tests headless. If you want to run them in the foreground 
 - Albert Casado
 - Victor Fernandez de Alba
 - Timo Stollenwerk
+
+## License
+
+The BSD 3-Clause License. Copyrights hold the Plone Foundation.
+See [LICENSE](LICENSE) for details.
