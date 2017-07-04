@@ -1,28 +1,31 @@
 //- CHECKBOXES AND RADIOS
 
 // single checkbox example
-fieldset.form-field
+.form-group
   input.form-checkbox#form-checkbox-id01(type="checkbox", name="form-checkbox-id01", required)
   label.form-label(for="form-checkbox-id01", aria-describedby="form-checkbox-id01-help") Checkbox label
     span.form-required (required)
   p.form-help#form-checkbox-id01-help Complementary and clarification to the label
 
 // single toggle example
-fieldset.form-field
-  input.form-toggle#form-toggle-id01(type="checkbox", name="form-toggle-id01")
+.form-group
   label.form-label(for="form-toggle-id01", aria-describedby="form-toggle-id01-help") Toggle label
+  input.form-toggle#form-toggle-id01(type="checkbox", name="form-toggle-id01")
   p.form-help#form-toggle-id01-help Complementary and clarification to the label
 
 // single range example
-fieldset.form-field
-  label.form-label(for="form-range-id01", aria-describedby="form-range-id01-help") Toggle label
+.form-group
+  label.form-label(for="form-range-id01", aria-describedby="form-range-id01-help") Range label
   input.form-range#form-range-id01(type="range", name="form-range-id01", min="0", max="100", step="1", value="88", oninput="form-range-id01-output.value = form-range-id01.value")
   output.form-output#form-range-id01-output(for="form-range-id01", name="form-range-id01-output") 88
-  p.form-help#form-toggle-id01-help Complementary and clarification to the label
-
+  p.form-help#form-range-id01-help Complementary and <a href="#">clarification</a> to the label
+  ul.form-help
+    li One item
+    li Two items
+    li Three items
 
 // several checkboxes example
-fieldset.form-field
+.form-group
   legend.form-legend(aria-describedby="form-legend-help") Legend grouping label
   input.form-checkbox#form-checkbox-id01(type="checkbox", name="form-checkbox-id01")
   label.form-label(for="form-checkbox-id01") Checkbox 01 label
@@ -31,7 +34,7 @@ fieldset.form-field
   p.form-help#form-legend-help Complementary and clarification to all radios
 
 // two radio example
-fieldset.form-field
+.form-group
   legend.form-legend(aria-describedby="form-legend-help") Legend grouping label
   input.form-radio#form-radio-id01(type="radio", name="form-radio-id01")
   label.form-label(for="form-radio-id01") Radio 01 label
@@ -40,49 +43,45 @@ fieldset.form-field
   p.form-help#form-legend-help Complementary and clarification to all radios
 
 
-
-
-
-
 //- INPUTS
 
 // text input
-fieldset.form-field
+.form-group
   label.form-label(for="form-text-id01", aria-describedby="form-text-id01-help") Text label 
     span.form-required (required)
   input.form-text#form-text-id01(type="text", name="form-text-id01", required, placeholder="Placeholder")
   p.form-help#form-text-id01-help Complementary and clarification to the label
 
 // textarea
-fieldset.form-field
+.form-group
   label.form-label(for="form-textarea-id01", aria-describedby="form-textarea-id01-help") Textarea label
     span.form-required (required)
   textarea.form-textarea#form-textarea-id01(name="form-textarea-id01", required, placeholder="Placeholder")
   p.form-help#form-textarea-id01-help Complementary and clarification to the label
 
 // password input
-fieldset.form-field
+.form-group
   label.form-label(for="form-password-id01", aria-describedby="form-password-id01-help") PSW label
     span.form-required (required)
   input.form-password#form-text-id01(type="password", name="form-password-id01", required, placeholder="Placeholder")
   p.form-help#form-text-id01-help Complementary and clarification to the label
 
 // email input
-fieldset.form-field
+.form-group
   label.form-label(for="form-email-id01", aria-describedby="form-email-id01-help") Email label
     span.form-required (required)
   input.form-email#form-text-id01(type="email", name="form-email-id01", required, placeholder="Placeholder")
   p.form-help#form-email-id01-help Complementary and clarification to the label
 
 // password input
-fieldset.form-field
+.form-group
   label.form-label(for="form-number-id01", aria-describedby="form-number-id01-help") Number label
     span.form-required (required)
   input.form-number#form-text-id01(type="number", name="form-number-id01", required, placeholder="Placeholder")
   p.form-help#form-number-id01-help Complementary and clarification to the label
 
 // file input
-fieldset.form-field
+.form-group
   label.form-select(for="form-file-id01", aria-describedby="form-file-id01-help") Browse label
     span.form-required (required)
   input.form-file#form-text-id01(type="file", name="form-file-id01", required)
@@ -90,7 +89,7 @@ fieldset.form-field
 
 
 // select input
-fieldset.form-field
+.form-group
   label.form-label(for="form-select-id01", aria-describedby="form-select-id01-help") Select label
     span.form-required (required)
   select.form-select#form-text-id01(required)
@@ -100,3 +99,73 @@ fieldset.form-field
     optgroup(label="Last element")  
       option(value="3") Last    
   p.form-help#form-number-id01-help Complementary and clarification to the label
+
+
+//- BUTTONS
+
+// button
+.form-group
+  button(type="button").button button
+
+.form-group
+  button(type="button").button button
+
+.form-group
+  button(type="button").button button
+
+// links
+.form-group
+  a.button(href="#", role="button") link button
+
+// inputs
+.form-group
+  input.button(type="reset", value="reset")
+
+.form-group
+  input.button(type="submit", value="submit")
+
+.form-group
+  input.button(type="button", value="button")
+
+// subclasses
+.form-group
+  button(type="button").button secondary
+
+.form-group
+  button(type="submit").button.primary primary
+  
+.form-group
+  button(type="reset").button.destructive destructive
+
+.form-group
+  .button-group(role="group", aria-label="Label of the group")
+    button(type="reset").button.destructive Cancel
+    button(type="button").button Almost
+    button(type="button").button.primary Done
+    
+.form-group
+  .button-group(role="group", aria-label="Label of the group")
+    button(type="button", aria-label="Description of SVG").button.button-icon.destructive
+      | <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="presentation" focusable="false">
+      |  <g fill-rule="evenodd">
+      |    <polygon points="25 27 27 27 27 25 25 25"/>
+      |    <polygon points="21 27 23 27 23 25 21 25"/>
+      |    <path d="M7,13 L29,13 L29,7 L7,7 L7,13 Z M7,21 L29,21 L29,15 L7,15 L7,21 Z M7,29 L29,29 L29,23 L7,23 L7,29 Z M5,5 L5,13 L5,15 L5,21 L5,23 L5,31 L31,31 L31,23 L31,21 L31,15 L31,13 L31,5 L5,5 Z"/>
+      |    <polygon points="25 11 27 11 27 9 25 9"/>
+      |    <polygon points="21 11 23 11 23 9 21 9"/>
+      |    <polygon points="25 19 27 19 27 17 25 17"/>
+      |    <polygon points="21 19 23 19 23 17 21 17"/>
+      |  </g>
+      | </svg>
+    button(type="button", aria-label="Description of SVG").button.button-icon.primary
+      | <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="presentation" focusable="false">
+      |  <g fill-rule="evenodd">
+      |    <polygon points="25 27 27 27 27 25 25 25"/>
+      |    <polygon points="21 27 23 27 23 25 21 25"/>
+      |    <path d="M7,13 L29,13 L29,7 L7,7 L7,13 Z M7,21 L29,21 L29,15 L7,15 L7,21 Z M7,29 L29,29 L29,23 L7,23 L7,29 Z M5,5 L5,13 L5,15 L5,21 L5,23 L5,31 L31,31 L31,23 L31,21 L31,15 L31,13 L31,5 L5,5 Z"/>
+      |    <polygon points="25 11 27 11 27 9 25 9"/>
+      |    <polygon points="21 11 23 11 23 9 21 9"/>
+      |    <polygon points="25 19 27 19 27 17 25 17"/>
+      |    <polygon points="21 19 23 19 23 17 21 17"/>
+      |  </g>
+      | </svg>
