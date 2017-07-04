@@ -8,12 +8,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
           <h2>Pastanaga UI</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h2 className="App-intro">
+          Forms
+        </h2>
+        <h3>InputText</h3>
         <InputText />
       </div>
     );
