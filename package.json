@@ -3,11 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "3.0.5",
+    "react-router-redux": "^4.0.8",
+    "react-thunk": "^1.0.0",
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.10"
+    "eslint-plugin-prettier": "^2.1.2",
+    "react-scripts": "1.0.10",
+    "prettier": "^1.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
