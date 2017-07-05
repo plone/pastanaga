@@ -12,12 +12,14 @@
     "react-thunk": "^1.0.0",
     "redux": "^3.7.1",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.70.0"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^2.1.2",
-    "react-scripts": "1.0.10",
-    "prettier": "^1.5.2"
+    "prettier": "^1.5.2",
+    "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
