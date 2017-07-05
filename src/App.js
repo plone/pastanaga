@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import { Route, Link } from 'react-router-dom'
 import Login from './Login';
 import Home from './Home';
+import Documentation from './Documentation';
 
 class App extends Component {
   render() {
@@ -16,10 +16,12 @@ class App extends Component {
         <header>
           <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
+          <Link to="/documentation">Documentation</Link>
         </header>
         <main>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/documentation" component={Documentation} />
         </main>
       </div>
     );
