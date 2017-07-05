@@ -23,9 +23,9 @@ before_script:
 script:
   - yarn test
   - pybot test.robot
-after_script:
   - yarn run build
   - yarn test:size
+after_script:
   - yarn outdated
 notifications:
   email:
