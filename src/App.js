@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import InputText from './forms/input';
+import { Route, Link } from 'react-router-dom'
+import Login from './Login';
+import Home from './Home';
 
 class App extends Component {
   render() {
@@ -11,11 +13,14 @@ class App extends Component {
           <img src={logo} className="logo" alt="logo" />
           <h2>Pastanaga UI</h2>
         </div>
-        <h2 className="App-intro">
-          Forms
-        </h2>
-        <h3>InputText</h3>
-        <InputText />
+        <header>
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+        </header>
+        <main>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
+        </main>
       </div>
     );
   }

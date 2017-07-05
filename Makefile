@@ -15,3 +15,7 @@ build:
 test:
 	@echo "Run Tests"
 	bin/pybot test.robot
+
+test-foreground:
+	@echo "Run Tests in foreground"
+	bin/pybot --variable HEADLESS:False test.robot
