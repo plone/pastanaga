@@ -10,15 +10,17 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="logo" alt="logo" />
-          <h2>Pastanaga UI</h2>
+          <div className="container">
+            <img src={logo} className="logo" alt="logo" />
+            <h2>Pastanaga <strong>UI</strong></h2>
+            <header>
+              <Link to="/">Home</Link>
+              <Link to="/login">Login</Link>
+              <Link to="/documentation">Documentation</Link>
+            </header>
+          </div>
         </div>
-        <header>
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/documentation">Documentation</Link>
-        </header>
-        <main>
+        <main className="container">
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/documentation" component={Documentation} />
