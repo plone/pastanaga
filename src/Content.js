@@ -30,15 +30,12 @@ class Content extends Component {
 
   render() {
     return (
-      <h1>works</h1>
+      <div>
       <h2>{this.state.page.title}</h2>
-      <h3>
         {
           this.state.page.description &&
           <h3>{this.state.page.description}</h3>
         }
-      </h3>
-      <div>
         {
           this.state.page.text &&
           <p dangerouslySetInnerHTML={{ __html: this.state.page.text.data }} />

@@ -20,6 +20,16 @@ report.html
 selenium-screenshot-*.png
 selenium
 
+# api
+api/.installed.cfg
+api/.mr.developer.cfg
+api/develop-eggs/
+api/eggs/
+api/parts/
+api/requirements.txt
+api/src/
+api/var/
+
 # misc
 .DS_Store
 .env.local

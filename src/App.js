@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { Route, Link } from 'react-router-dom'
 import Login from './Login';
 import Home from './Home';
+import Content from './Content';
 import Documentation from './Documentation';
 
 const API_URL = 'http://localhost:8080/Plone';
@@ -13,17 +14,6 @@ const API_HEADERS = {
 
 
 class App extends Component {
-
-  componentDidMount(){
-    fetch(API_URL, {headers: API_HEADERS})
-    .then((response) => response.json())
-    .then((responseData) => {
-      this.setState({page: responseData});
-    })
-    .catch((error) => {
-      console.log('Error fetching and parsing data', error);
-    });
-  }
 
   render() {
     return (
@@ -41,6 +31,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/documentation" component={Documentation} />
+          <Route exact path="/**" component={Content} />
         </main>
       </div>
     );
