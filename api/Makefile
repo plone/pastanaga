@@ -8,10 +8,6 @@ all: .installed.cfg
 .installed.cfg: bin/buildout *.cfg
 	bin/buildout
 
-clean:
-	@echo "Clean"
-	rm -rf bin build include lib
-
 bin/buildout: bin/pip
 	wget https://raw.githubusercontent.com/plone/buildout.coredev/5.1/requirements.txt
 	bin/pip install -r requirements.txt

@@ -3,9 +3,12 @@ import logo from './logo.svg';
 import { Route, Link } from 'react-router-dom'
 import Login from './Login';
 import Home from './Home';
+import Content from './Content';
 import Documentation from './Documentation';
 
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -24,6 +27,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/documentation" component={Documentation} />
+          <Route exact path="/**" component={Content} />
         </main>
       </div>
     );
