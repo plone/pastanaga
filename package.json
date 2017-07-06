@@ -2,12 +2,6 @@
   "name": "pastanaga",
   "version": "0.1.0",
   "private": true,
-  "bundlesize": [
-    {
-      "path": "./build/static/js/main.*.js",
-      "threshold": "75 Kb"
-    }
-  ],
   "dependencies": {
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
@@ -15,7 +9,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
-    "react-router": "^4.1.1",
+    "react-router": "3.0.5",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "next",
     "react-thunk": "^1.0.0",
@@ -24,7 +18,6 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "bundlesize": "^0.6.1",
     "eslint-plugin-prettier": "^2.1.2",
     "prettier": "^1.5.2",
     "react-scripts": "1.0.10"
@@ -37,7 +30,6 @@
     "start-js": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:size": "bundlesize",
     "eject": "react-scripts eject"
   }
 }

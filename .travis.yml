@@ -24,11 +24,6 @@ before_script:
 script:
   - yarn test
   - pybot test.robot
-  - yarn run build
-  - yarn test:size
-after_script:
-  - yarn outdated
 notifications:
   email:
     - stollenwerk@kitconcept.com
-    - fernandezdealba@kitconcept.com
