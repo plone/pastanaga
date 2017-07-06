@@ -17,13 +17,16 @@ class Alert extends Component {
     onDismiss: PropTypes.func.isRequired
   }
 
+  handleDismiss = e => {
+    const { onDismiss } = this.props
+    if (onDismiss) onDismiss(e, this.props)
+  }
+
   render() {
     const { type,
             title,
             description,
-            active,
-            dismissable,
-            onDismiss } = this.props
+            dismissable } = this.props
 
     let status_svg;
     switch (type) {
@@ -49,7 +52,8 @@ class Alert extends Component {
       'alert-dismissable': dismissable});
 
     const dismissIcon = dismissable && (
-      <button type="button" className="alert-dismiss" aria-label="Dismiss">
+      <button type="button" className="alert-dismiss" aria-label="Dismiss"
+              onClick={this.handleDismiss}>
         <img src={clear} alt="Dismiss" role="presentation" />
       </button>
     )
