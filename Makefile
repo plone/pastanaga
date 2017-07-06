@@ -12,6 +12,14 @@ build:
 	virtualenv-2.7 . | virtualenv .
 	bin/pip install -r requirements.txt
 
+build-backend:
+	@echo "Build Backend"
+	docker pull plone/plone.restapi
+
+start-backend:
+	@echo "Start Backend"
+	docker run -p 8080:8080 plone/plone.restapi
+
 test:
 	@echo "Run Tests"
 	bin/pybot test.robot
