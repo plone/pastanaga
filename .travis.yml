@@ -18,7 +18,7 @@ before_script:
   - unzip chromedriver_linux64.zip
   - sudo mv chromedriver /usr/local/bin
   - (yarn)
-  - (yarn start &)
+  - (yarn start-js &)
   - sleep 10
 script:
   - yarn test
