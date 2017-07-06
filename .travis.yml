@@ -27,6 +27,7 @@ script:
   - yarn test:size
 after_script:
   - cp -Rv build/ docs/
+  - ls -al docs/
   - yarn outdated
 notifications:
   email:
