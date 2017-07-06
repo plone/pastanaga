@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
-class InputText extends React.Component{
+class InputText extends Component{
 
   render() {
     return (
