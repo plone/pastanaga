@@ -5,7 +5,7 @@ all: clean build test
 
 clean:
 	@echo "Clean"
-	rm -rf .py27
+	rm -rf bin build include lib
 
 build:
 	@echo "Build"
