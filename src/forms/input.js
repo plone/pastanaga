@@ -1,29 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
-const InputText = () => {
-  return (
-    <div className="form-field">
-      <label
-        htmlFor="form-text-id01"
-        aria-describedby="form-text-id01-help"
-        className="form-label">
-          Text label <span className="form-required">(required)</span>
-      </label>
-      <input
-        id="form-text-id01"
-        type="text"
-        name="form-text-id01"
-        required="required"
-        placeholder="Placeholder"
-        className="form-text" />
-      <p
-        id="form-text-id01-help"
-        className="form-help">
-        Complementary and clarification to the label
-      </p>
-    </div>
+class InputText extends React.Component{
+
+  render() {
+    return (
+      <div className="form-field">
+      <h1>{this.props.id}</h1>
+        <label
+          htmlFor={this.props.id}
+          aria-describedby={this.props.id + "-help"}
+          className="form-label">
+            Text label <span className="form-required">(required)</span>
+        </label>
+        <input
+          id={this.props.id}
+          type="text"
+          name={this.props.id}
+          required="required"
+          placeholder="Placeholder"
+          className="form-text" />
+        <p
+          id={this.props.id + "-help"}
+          className="form-help">
+          Complementary and clarification to the label
+        </p>
+      </div>
     );
   }
+}
 
 export default InputText;
