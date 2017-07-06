@@ -19,13 +19,14 @@ before_script:
   - sudo mv chromedriver /usr/local/bin
   - (yarn)
   - (yarn start &)
-  - sleep 3
+  - sleep 10
 script:
   - yarn test
   - pybot test.robot
   - yarn run build
   - yarn test:size
 after_script:
+  - cp -Rv build/ docs/
   - yarn outdated
 notifications:
   email:
