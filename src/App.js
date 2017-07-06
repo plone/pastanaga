@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import { Route, Link } from 'react-router-dom'
 import Login from './Login';
 import Home from './Home';
@@ -16,6 +15,7 @@ class App extends Component {
         <header>
           <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
+          <Link to="/components">Login</Link>
         </header>
         <main>
           <Route exact path="/" component={Home} />
