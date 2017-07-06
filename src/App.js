@@ -6,12 +6,6 @@ import Home from './Home';
 import Content from './Content';
 import Documentation from './Documentation';
 
-const API_URL = 'http://localhost:8080/Plone';
-const API_HEADERS = {
-  'Accept': 'application/json',
-  'Authorization': 'Basic Zm9vYmFyOmZvb2Jhcgo='
-};
-
 
 class App extends Component {
 
