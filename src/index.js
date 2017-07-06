@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import './styles/main.css';
+import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import { ConnectedRouter } from 'react-router-redux'
 import App from './App';
