@@ -1,7 +1,15 @@
 body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif; }
+  padding: 0; }
+
+a {
+  color: #007eb1;
+  text-decoration: underline; }
+
+kbd {
+  display: none; }
 
 header {
   float: right;
@@ -11,6 +19,9 @@ header {
 
 main {
   padding-top: 20px; }
+
+input:focus {
+  outline: none; }
 
 .container {
   width: 960px;
@@ -32,3 +43,73 @@ main {
 
 .App-intro {
   font-size: large; }
+
+dialog {
+  padding: 0; }
+
+.login {
+  border: 1px solid #c7d5d8;
+  display: block; }
+  .login h2 {
+    font-size: 16px;
+    margin-left: 21px;
+    margin-top: 17px; }
+  .login fieldset legend {
+    background-color: #f2f5f6;
+    border-top: 4px solid #c7d5d8;
+    color: #517776;
+    font-size: 12px;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 21px;
+    text-transform: uppercase; }
+  .login fieldset .form-group {
+    padding-left: 21px;
+    padding-right: 21px; }
+  .login fieldset .form-required {
+    display: none; }
+  .login fieldset .form-help {
+    color: #878f93;
+    font-size: 12px;
+    font-weight: 300; }
+  .login fieldset label {
+    border-bottom: 1px solid #edf1f2;
+    font-size: 14px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: 100px; }
+  .login fieldset input {
+    border: 0;
+    border-bottom: 2px solid #007eb1;
+    font-weight: 300;
+    line-height: 60px;
+    margin-left: 20px;
+    width: 250px; }
+    .login fieldset input::placeholder {
+      color: #878f93;
+      font-size: 14px;
+      font-weight: 300; }
+    .login fieldset input:hover {
+      border-bottom: 2px solid #878f93; }
+    .login fieldset input:active {
+      border-bottom: 2px solid #007eb1; }
+    .login fieldset input:valid {
+      border-bottom: 2px solid #069182; }
+    .login fieldset input:invalid {
+      border-bottom: 2px solid #d01157; }
+  .login fieldset button {
+    background-color: inherit;
+    border: 0; }
+  .login fieldset .button-image {
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 3px; }
+  .login fieldset .button-group {
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: right; }
+  .login fieldset .button-label {
+    display: none; }
+  .login fieldset .button-tooltip {
+    display: none; }

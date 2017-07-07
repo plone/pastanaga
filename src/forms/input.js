@@ -1,30 +1,39 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class InputText extends Component{
+
+  static PropTypes = {
+    id: PropTypes.string.isRequired,
+    required: PropTypes.bool,
+    placeholder: PropTypes.string,
+    formHelp: PropTypes.string
+  }
 
   render() {
     return (
       <div className="form-field">
-      <h1>{this.props.id}</h1>
         <label
           htmlFor={this.props.id}
           aria-describedby={this.props.id + "-help"}
           className="form-label">
-            Text label <span className="form-required">(required)</span>
+            {this.props.id}
+            {this.props.required && <span className="form-required">(required)</span>}
         </label>
         <input
           id={this.props.id}
           type="text"
           name={this.props.id}
-          required="required"
-          placeholder="Placeholder"
+          required={this.props.required}
+          placeholder={this.props.placeholder || this.props.id}
           className="form-text" />
-        <p
-          id={this.props.id + "-help"}
-          className="form-help">
-          Complementary and clarification to the label
-        </p>
+        { this.props.formHelp &&
+          <p
+            id={this.props.id + "-help"}
+            className="form-help">
+            {this.props.formHelp}
+          </p>
+        }
       </div>
     );
   }

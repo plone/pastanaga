@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import './styles/reboot.min.css';
 import './styles/main.css';
 import registerServiceWorker from './registerServiceWorker';
 import { ConnectedRouter } from 'react-router-redux'
