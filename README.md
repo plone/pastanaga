@@ -11,27 +11,35 @@ To ease development with multiple Node versions, we recommend to use nvm (https:
 We will also use the yarn package manager (https://yarnpkg.com/en/) which provides you with repeatable and stable builds, amongst other features.
 To install yarn globally run:
 
+```
   $ npm install yarn -g
+```
 
 ## Setup
 
+```
   $ yarn
-
+```
 
 ## Start
 
+```
   $ yarn start
-
+```
 
 ## Setup Backend
 
 Pull plone.restapi docker image from docker hub:
 
+```
   $ docker pull plone/plone.restapi
+```
 
 Start plone.restapi docker image:
 
+```
   $ docker run -p 8080:8080 plone/plone.restapi
+```
 
 The '-p' argument allows you to expose the Zope process that runs on port 8080 within the docker container to an local 'external:docker'
 
@@ -39,15 +47,21 @@ The '-p' argument allows you to expose the Zope process that runs on port 8080 w
 
 ### Test Setup
 
+```
   $ make
+```
 
 ### Run Acceptance Tests
 
+```
   $ bin/pybot test.robot
+```
 
 By default we run our tests headless. If you want to run them in the foreground use::
 
+```
   $ bin/pybot --variable HEADLESS:False test.robot
+```
 
 ## Minimal Viable Product
 
