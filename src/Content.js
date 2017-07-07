@@ -9,16 +9,15 @@ const API_HEADERS = {
 
 class Content extends Component {
 
-  constructor(){
+  constructor(path) {
     super();
-    console.log('constructor');
     this.state={
       page: {}
     };
   }
 
   componentDidMount(){
-    fetch(API_URL + '/front-page', {headers: API_HEADERS})
+    fetch(API_URL + this.props.location.pathname, {headers: API_HEADERS})
     .then((response) => response.json())
     .then((responseData) => {
       this.setState({page: responseData});
