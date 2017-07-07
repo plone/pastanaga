@@ -37,6 +37,12 @@ main {
     margin-left: 20px;
     font-weight: 300;
   }
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
 }
 
 .App-intro {

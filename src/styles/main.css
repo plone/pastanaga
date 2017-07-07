@@ -29,6 +29,8 @@ main {
     display: inline-block;
     margin-left: 20px;
     font-weight: 300; }
+  .App-header ul li {
+    display: inline-block; }
 
 .App-intro {
   font-size: large; }

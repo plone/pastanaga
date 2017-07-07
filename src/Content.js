@@ -16,8 +16,8 @@ class Content extends Component {
     };
   }
 
-  componentDidMount(){
-    fetch(API_URL + this.props.location.pathname, {headers: API_HEADERS})
+  componentWillReceiveProps(nextProps) {
+    fetch(API_URL + '/' + nextProps.match.params[0], {headers: API_HEADERS})
     .then((response) => response.json())
     .then((responseData) => {
       this.setState({page: responseData});
