@@ -5,6 +5,7 @@ import Login from './Login';
 import Home from './Home';
 import Content from './Content';
 import Documentation from './Documentation';
+import Navigation from './Navigation';
 
 
 class App extends Component {
@@ -17,10 +18,11 @@ class App extends Component {
             <img src={logo} className="logo" alt="logo" />
             <h2>Pastanaga <strong>UI</strong></h2>
             <header>
-              <Link to="/">Home</Link>
+              <Navigation></Navigation>
               <Link to="/login">Login</Link>
               <Link to="/documentation">Documentation</Link>
             </header>
+
           </div>
         </div>
         <main className="container">
