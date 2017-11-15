@@ -7,3 +7,4 @@ Implementations for React and Angular are currently under active development:
 - React: https://github.com/plone/plone-react
 - Angular: https://github.com/plone/pastanaga-angular
 
+![Pastanaga](https://github.com/plone/pastanaga/raw/master/pastanaga-logo.jpg)
