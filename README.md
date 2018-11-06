@@ -20,7 +20,7 @@ The Pastanaga UI mockups, specs and Pastanaga Icons are released under Creative 
 
 Implementations for React and Angular are currently under active development:
 
-- React: https://github.com/plone/plone-react
+- React: https://github.com/plone/volto
 - Angular: https://github.com/plone/pastanaga-angular
 
 # Minimal Viable Product
