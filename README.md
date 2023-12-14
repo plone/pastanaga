@@ -12,9 +12,9 @@ This repo contains UI/UX specs for Pastanaga UI. There's a Zeplin repository wit
 
 There is an initial release of the Pastanaga icons on https://github.com/plone/pastanaga-icons. These icons are intended to be used only in "official" Pastanaga UI, so please refrain to use them on personal projects unless they are based on Pastanaga UI.
 
-# Pastanaga UI license
+# License
 
-The Pastanaga UI mockups, specs and Pastanaga Icons are released under Creative Commons Attribution-ShareAlike License and belongs to Albert Casado and the Plone Foundation.
+The Pastanaga UI mockups, specs and Pastanaga Icons are released under [Creative Commons Attribution-ShareAlike License]( https://creativecommons.org/licenses/by-sa/4.0/).
 
 # Implementations
 
